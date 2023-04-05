@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input placeholder="nhập số tiền" id="nhapsotien">
+<select id="nguon">
+    <option value="23000">VND</option>
+    <option value="1">USD</option>
+    <option value="120">JPY</option>
+</select>
+
+<select id="ketqua">
+    <option value="23000">VND</option>
+    <option value="1">USD</option>
+    <option value="120">JPY</option>
+</select>
+<button onclick="chuyenDoi()">Chuyển đổi</button>
+
+<script>
+    function chuyenDoi() {
+        let sotien = document.getElementById("nhapsotien");
+        let nguon = document.getElementById("nguon");
+        let ketqua = document.getElementById("ketqua");
+
+        let dauvao = sotien.value;
+        let tiente1 = nguon.value;
+        let tiente2 = ketqua.value;
+
+        alert(dauvao/tiente1*tiente2);
+    }
+</script>
+
+
+</body>
+</html>
