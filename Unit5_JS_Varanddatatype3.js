@@ -11,3 +11,5 @@ let Tongdiem = (Vatly + Toan + Hoa);
 document.write("Tổng điểm là:" +Tongdiem);
 document.write('<br/>');
 document.write("Điểm trung bình là:" +Diemtrungbinh);
+
+//Ung dung tinh diem trung binh
