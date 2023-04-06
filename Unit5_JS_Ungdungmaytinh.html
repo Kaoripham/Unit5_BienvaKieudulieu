@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung may tinh</title>
+</head>
+<body>
+
+Name: <input placeholder="Nhap ten" id="Ten">
+Age: <input palaceholder="Nhap tuoi" id="Tuoi">
+<button onclick="getName()">Show</button>
+
+</body>
+</html>
+<script>
+  function getName() {
+    //lấy thẻ inputname về
+    let inputName = document.getElementById("Ten");
+    let inputAge = document.getElementById("Tuoi")
+    let name = inputName.value;
+    let age = inputAge.value;
+    alert("Bạn đã nhập tên là:" + name + "Tuổi của bạn là:" +age);
+  }
+</script>
