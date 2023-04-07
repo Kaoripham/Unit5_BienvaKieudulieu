@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung may tinh</title>
+</head>
+<body>
+<p>Nhap so:</p>
+<input type = "number"  name="Sothu1" placeholder="So thu nhat" size="25"/>
+<input type = "number"  name="Sothu2" placeholder="So thu hai" size="25"/>
+<br>
+<br>
+<button onclick="Add()">Cộng(+)</button>
+<button onclick="Sub()">Trừ(-)</button>
+<button onclick="Multi">Nhân(*)</button>
+<button onclick="Div">Chia(/)</button>
+
+<h4>Kết quả là: </h4>
+<div id="Ketqua"></div>
+
+
+</body>
+</html>
+
+<script>
+
+  function Add() {
+    let Num1 = document.getElementById("Sothu1").value;
+    let Num2 = document.getElementById("Sothu2").value;
+    let Ketqua = Num1 + Num2;
+    document.getElementById("Ketqua").innerHTML = Ketqua;
+  }
+
+</script>
